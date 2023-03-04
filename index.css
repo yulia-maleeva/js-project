@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serifs;
+  background-color: darkgrey;
+}
+
+.greeting {
+  width: 50%;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+}
+
+.greeting {
+  padding: 10px;
+  text-align: center;
+}
+
+#name-form {
+  display: none;
+}
+#name-form.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+#todo-list-form {
+  display: none;
+}
+#todo-list-form.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.new-item-button {
+  display: flex;
+}
+.new-item-button.hidden {
+  display: none;
+}
+
+.new-item-input {
+  display: none;
+}
+.new-item-input.active {
+  display: flex;
+}
+
+.items {
+  width: 100%;
+  list-style: none;
+}
+.items li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.items li i {
+  pointer-events: none;
+}
+.items li.done span {
+  text-decoration: line-through;
+}
+.items li .name-editor {
+  display: none;
+}
+.items li .actions {
+  margin-left: auto;
+}
+.items li.editing .name-editor {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: black;
+  height: 28px;
+  align-items: center;
+}
+
+.items-block {
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
