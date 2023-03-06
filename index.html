@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/536cf02985.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>JS Project</title>
+  </head>
+  <body>
+    <form id="name-form">
+      <input type="text" name="name" placeholder="Text your name, please" />
+      <button type="submit" class="next-button">Next</button>
+    </form>
+    <div id="todo-list-form">
+      <p class="greeting"></p>
+      <h1>Things to do</h1>
+      <p>0 from 3 done</p>
+      <input type="search" placeholder="Search" />
+      <div class="form-buttons">
+        <button>All</button>
+        <button>Active</button>
+        <button>Done</button>
+      </div>
+      <div class="items-block">
+        <ul class="items"></ul>
+      </div>
+      <button type="button" class="new-item-button">+Add new item</button>
+      <input
+        type="text"
+        name="item"
+        class="new-item-input"
+        placeholder="+Add new item"
+      />
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
